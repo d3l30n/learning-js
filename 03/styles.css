@@ -1,3 +1,11 @@
-button {
+.red-btn {
     background-color: red;
+    color: white;
+    border: none;
 }
+
+.yellow-btn{
+    background-color: yellow;
+}
+
+/* this is a comment */
