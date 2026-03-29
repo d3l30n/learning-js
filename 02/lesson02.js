@@ -13,6 +13,18 @@ console.log(`Total cost $${5+3}`);
 alert(`Total cost $${5+3}`);
 
 
+//1 coffee $5.99 and 1 bagel $2.95
+
+console.log('Total Cost $' + ((599 + 295) / 100));
+
+console.log(`Total Cost $${(599 + 295) / 100}`);
+
+alert(`Total Cost $${(599 + 295) / 100}`);
+
+console.log(`Total Cost $${(599 + 295) / 100} \n Thank you, come again!`);
+
+
+
 
 
 
