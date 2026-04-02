@@ -5,4 +5,10 @@ let cost =5 + (3 * 2) + 9;
 
 console.log(`Cost of food:$${cost}`);
 
-let tax = cost * 0.1
+let tax = cost * 0.1;  
+
+console.log(`Tax (10%):$${tax}`);
+
+let TotalCost = cost + tax;
+
+console.log(`Total Cost: $${TotalCost}`);
