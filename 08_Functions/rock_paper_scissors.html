@@ -10,56 +10,57 @@
   <body>
    <p>Rock, Paper, Scissors</p>
     <button onclick="
-    pickComptMove();
-
-     
-     let result = '';
-     if (computerMove === 'Rock') {
-      result = 'Tie.';
-     } else if (computerMove ==='Paper') {
-      result = 'You lose.';
-     } else if (computerMove === 'Scissors') {
-      result = 'You Win!';
-     }
-
-     alert(`You picked rock. Computer picked ${computerMove}. ${result} `)
+      playgame('rock');
     ">Rock</button>
 
      <button onclick="
-      pickComptMove();
-
-     let result = '';
-     if (computerMove === 'Rock') {
-      result = 'You Win!';
-     } else if (computerMove ==='Paper') {
-      result = 'Tie.';
-     } else if (computerMove === 'Scissors') {
-      result = 'You lose.';
-     }
-
-     alert(`You picked paper. Computer picked ${computerMove}. ${result} `)
-     
-     
-     
+      playgame('paper');
      ">Paper</button>
        
      <button onclick="
-      console.log(pickComptMove());
+      playgame('scissors');
+     
+     ">Scissors</button> 
+   <script>
+    function playgame (playermove){      
+      const computerMove = pickComptMove();
      
      let result = '';
-     if (computerMove === 'Rock') {
+
+     if (playermove === 'scissors'){
+      if (computerMove === 'Rock') {
       result = 'You lose.';
      } else if (computerMove ==='Paper') {
       result = 'You Win!';
      } else if (computerMove === 'Scissors') {
       result = 'Tie.';
      }
+     } else if (playermove === 'paper') {
+           if (computerMove === 'Rock') {
+      result = 'You Win!';
+     } else if (computerMove ==='Paper') {
+      result = 'Tie.';
+     } else if (computerMove === 'Scissors') {
+      result = 'You lose.';
+     }
+     } else if (playermove === 'rock') {
+           if (computerMove === 'Rock') {
+      result = 'Tie.';
+     } else if (computerMove ==='Paper') {
+      result = 'You lose.';
+     } else if (computerMove === 'Scissors') {
+      result = 'You Win!';
+     }
+     }
+     
 
-     alert(`You picked scissors. Computer picked ${computerMove}. ${result} `)
-     
-     
-     ">Scissors</button>
-   <script>
+     alert(`You picked ${playermove}. Computer picked ${computerMove}. ${result} `)
+     }
+
+
+
+
+
     function pickComptMove() {
           const randomNumber = Math.random();
              let computerMove = '';
