@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Selections and Booleans</title>
+</head>
+<body>
+  <h1>Testing Selections!</h1>
+
+  <script>
+    var red = true;
+    var blue = false;
+    var green;
+    var myNum = 5;
+    var otherNum = 6;
+    //var notNum ="5"; 
+    var notNum = "chicken";
+    var myValue = notNum - myNum;
+
+    //using == compares two values and returns either true if they are the same and or false if they aren't.
+   //if(myNum === notNum){
+     if(myValue){
+      alert("The statement is true!");
+    } else {
+      alert("The statement is false!");
+      alert(myValue);  
+    }
+    //NaN === Not a Number;
+    //0, NaN, Undefined, Null, False === False
+    //the triple "="(===) doesn't perform type coercion
+    //(===) is myNum exactly equal to notNum? No; False.
+    //(==) is MyNum equals to notNum? Yes; True.
+    //It's recommended to use "===", to avoid type coercion.
+    //type coercion is the automatic or implicit conversion of a value from one data type to another (e.g., from a string to a number) by the JavaScript engine. This happens when you use operators on different types or place a value in a context where a specific type is expected
+  </script>
+</body>
+</html>
+
