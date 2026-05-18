@@ -7,14 +7,31 @@
 </head>
 <body>
   <script>
-    var text = '';
-    var incrementor = 0;
-    while (incrementor < 10) {
+/*     var text = '';
+    var incrementor = 1;
+    while (incrementor < 11) {
       //+= takes the current value of text and adds to it; \\text += new value \===\ text = text + new value
      text += "The incrementor has gone up to " + incrementor + "\n";
       incrementor++;
+
+      //template literals
+      //Using backticks along with ${} around your expressions allows you to
+      //embed expressions within strings.
+      text += `The incrementor has gone up to ${incrementor}\n`;
     }
-     alert(text);
+     alert(text); */
+
+
+     //another example
+
+     var i = 1;
+     var text = '';
+
+     while ( i < 11 ){
+      text += `The incrementor is ${i}, the incrementor squared is ${i * i} \n`;
+       i++; 
+     }
+      alert(text);
   </script>
 </body>
 </html>

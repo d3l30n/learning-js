@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sequence 03</title>
+</head>
+<body>
+  <script>
+    var myString = 'I am really hungry for some';
+   
+    var foods = ['cheese', 'pie', 'breakfast', 'lunch'];
+/* 
+    for (var i = 0; i < foods.length; i++) {
+     
+      var remainder = i % 2;
+      if ( remainder === 0){
+        var foodUpper = foods[i].toUpperCase();
+           alert(`${myString} ${foodUpper}`);
+      } else {
+        alert(`${myString} ${foods[i]}`);
+      }
+   } */
+
+    //refactoring code is the process of making your code simple
+
+   
+   
+    for (var i = 0; i < foods.length; i++) {
+      if (i % 2 === 0)  {
+        alert(`${myString} ${foods[i].toUpperCase()}`);
+      } else {
+        alert(`${myString} ${foods[i]}`);
+      }
+    }
+
+    </script> 
+
+</body>
+</html>
