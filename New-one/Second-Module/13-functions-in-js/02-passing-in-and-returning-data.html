@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passing In and Returning Data</title>
+</head>
+<body>
+  <script>
+     function upperMessage(message){
+      var upperMessage = message.toUpperCase();
+      console.log(upperMessage);
+     }
+
+     upperMessage('Here\'s a message!') ;
+
+     //passing in data
+     function addNumbers(Num1, Num2){
+      var sum = Num1 + Num2;
+      console.log(sum);
+     }
+
+     addNumbers(2, 1);
+
+     //returning data
+
+      function returnSum(Num1, Num2){
+      var sum = Num1 + Num2;
+      return sum;
+     }
+
+     console.log(returnSum(3, 5));
+  </script>
+  
+</body>
+</html>
