@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random number generator</title>
+</head>
+<body>
+  <script>
+    
+
+    var foods = ["cheese","chicken","grapes","hamburgers"];
+    
+    function randomInt(min, max){
+
+    
+      //creating a random integer from min to max
+     
+      return Math.floor((max - min + 1) * Math.random()) + min;
+   
+    } 
+    
+   
+    console.log(foods[randomInt(0,3)]);
+
+</script>
+</body>
+</html>

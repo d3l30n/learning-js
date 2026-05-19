@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random number generator</title>
+</head>
+<body>
+  <script>
+    //random integer generator
+
+    function randomInt(min, max){
+      var numOfValues = max - min + 1;
+      var randomNum = Math.random();
+      var randomVal = randomNum * numOfValues;
+      var roundedRandomVal = Math.floor(randomVal);
+      var finalNum = min + roundedRandomVal;  
+      //floor is a method, and seal is a method
+      //floor gonna round down the value, and seal gonna round up the value(short for sealing)
+
+
+      console.log(finalNum);
+    } 
+    randomInt(5,10);
+  </script>
+</body>
+</html>

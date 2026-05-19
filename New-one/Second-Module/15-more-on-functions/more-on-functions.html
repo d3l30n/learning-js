@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More on Functions</title>
+</head>
+<body>
+  <script>
+    //functions can be anonymous
+
+    var foods = ["cheese","chicken","grapes","hamburgers"];
+    
+    function randomInt(min, max){
+
+     
+    return Math.floor((max - min + 1) * Math.random()) + min;
+   
+    } 
+    
+   
+    console.log(foods[randomInt(0,3)]);
+
+    var greeting = function(){
+      console.log('Hello');
+
+    }
+
+    greeting();
+  </script>
+</body>
+</html>
