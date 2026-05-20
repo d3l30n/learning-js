@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get Elements by Tag Name</title>
+</head>
+<body>
+  <h1>Get Elements by Tag Name</h1>
+  <p>This is a paragraph.</p>
+  <p>This is another paragraph.</p>
+  <p>This is yet another paragraph.</p>
+  <script>
+    var ps = document.getElementsByTagName("p");
+
+    for(var i = 0; i < ps.length; i ++){
+      ps[i].style.color = "red";
+      alert(`Showing paragraph ${i}`);
+    }
+  </script>
+</body>
+</html>
