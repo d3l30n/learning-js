@@ -13,6 +13,14 @@
    </form>
   <script>
     //submit event
+     var myForm = document.querySelector('form');
+      myForm.addEventListener('submit', function(evt){
+        evt.preventDefault();
+
+        var formData = document.querySelector('input').value;
+
+        alert(formData);
+      });
   </script>
 </body>
 </html>
