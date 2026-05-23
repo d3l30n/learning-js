@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testing Scopes in JavaScript</title>
+</head>
+<body>
+ <h1>Testing Scopes in JS</h1>
+ <script>
+  //in javascript if you forget to use the "Var" keyword
+  //the variable will be created in the global scope
+  //even if it's inside a function
+
+  //var aVariable = "This is in the Global Scope"
+
+   function testScope(){
+    oopsGlobal = "This is a global variable, but it was created by accident!";
+    var aVariable = "This is a local variable";
+    console.log(aVariable);
+   }
+
+   testScope();
+
+   console.log(aVariable);
+ </script>  
+</body>
+</html>
